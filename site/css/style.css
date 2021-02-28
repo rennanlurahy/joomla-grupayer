@@ -1,0 +1,91 @@
+.my-form-row{
+    width: 100%;
+    display: flex;
+}
+
+.input-wrapper{
+    width: 100%;
+    margin: 0 9px;
+}
+
+.input-wrapper .inputbox{
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing: border-box;
+    padding: 4px 6px;
+    height: 30px;
+}
+
+.input-wrapper:first-child{
+    margin-left: 0;
+}
+
+.input-wrapper:last-child{
+    margin-right: 0;
+}
+
+.my-form-submit-button-wrapper{
+    display: flex;
+    justify-content:flex-end;
+}
+
+.iframe-epag {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    width: 1px;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.pagtesouromodal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    padding: 20px;
+    z-index: 100000000;
+    visibility: hidden;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.pagtesouromodal.fade{
+    opacity: 0;
+    transition: opacity .15s linear, visibility .15s;
+}
+
+.pagtesouromodal.fade.show{
+    visibility: visible;
+    opacity: 1;
+    transition: opacity .15s linear, visibility 0s;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.pagtesouromodal .pagtesouromodal-dialog{
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.pagtesouromodal.fade .pagtesouromodal-dialog{
+    transition: transform .3s ease-out,-webkit-transform .3s ease-out;
+    transform: translate(0,-25%);
+}
+
+.pagtesouromodal.show .pagtesouromodal-dialog{
+    transform: translate(0,0);
+}
+
+.pagtesouromodal-open{
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}

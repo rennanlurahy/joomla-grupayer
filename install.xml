@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0" method="upgrade">
+    <name>com_grupayer</name>
+    <creationDate> February 2021 </creationDate>
+    <author>Rennan Lurahy</author>
+    <authorEmail>rennanlurahy@hotmail.com</authorEmail>
+    <authorUrl></authorUrl>
+    <copyright></copyright>
+    <license></license>
+    <version>1.0.0</version>
+    <description>COM_GRUPAYER_DESCRIPTION</description>
+
+    <scriptfile>script.php</scriptfile>
+
+    <install>
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+        </sql>
+    </install>
+
+    <uninstall>
+        <sql>
+            <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+        </sql>
+    </uninstall>
+
+    <update>
+        <schemas>
+            <schemapath type="mysql">sql/updates/mysql</schemapath>
+        </schemas>
+    </update>
+
+    <files folder="site">
+        <filename>grupayer.php</filename>
+        <filename>controller.php</filename>
+        <folder>css</folder>
+        <folder>js</folder>
+        <folder>language</folder>
+        <folder>models</folder>
+        <folder>views</folder>
+    </files>
+
+    <languages folder="site/language">
+        <language tag="en-GB">en-GB/en-GB.com_grupayer.ini</language>
+    </languages>
+
+    <administration>
+        <menu link="index.php?option=com_grupayer">COM_GRUPAYER_MENU</menu>
+        <files folder="administrator">
+            <filename>access.xml</filename>
+            <filename>config.xml</filename>
+            <filename>grupayer.php</filename>
+            <filename>controller.php</filename>
+            <folder>controllers</folder>
+            <folder>helpers</folder>
+            <folder>language</folder>
+            <folder>models</folder>
+            <folder>sql</folder>
+            <folder>tables</folder>
+            <folder>views</folder>
+        </files>
+        <languages folder="administrator/language">
+            <language tag="en-GB">en-GB/en-GB.com_grupayer.ini</language>
+            <language tag="en-GB">en-GB/en-GB.com_grupayer.sys.ini</language>
+            <language tag="pt-BR">pt-BR/pt-BR.com_grupayer.ini</language>
+            <language tag="pt-BR">pt-BR/pt-BR.com_grupayer.sys.ini</language>
+        </languages>
+    </administration>
+
+    <updateservers>
+        <server type="extension" name="GRU Payer Updates">https://rennanlurahy.github.io/joomla-grupayer/version.xml</server>
+    </updateservers>
+</extension>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="input_config">
+        <field name="id" type="hidden" label="id" default="1" />
+        <field name="description" type="text" label="COM_GRUPAYER_FORM_LABEL_DESCRIPTION" required="true" />
+        <field name="name" type="text" label="COM_GRUPAYER_FORM_LABEL_NAME" required="true" />
+        <field name="default" type="text" label="COM_GRUPAYER_FORM_LABEL_DEFAULT" />
+        <field name="type" type="list" label="COM_GRUPAYER_FORM_LABEL_TYPE">
+            <option value="text">COM_GRUPAYER_FORM_LABEL_TYPE_OPTION1</option>
+            <option value="number">COM_GRUPAYER_FORM_LABEL_TYPE_OPTION2</option>
+            <option value="date">COM_GRUPAYER_FORM_LABEL_TYPE_OPTION3</option>
+            <option value="services">COM_GRUPAYER_FORM_LABEL_TYPE_OPTION4</option>
+        </field>
+        <field name="published" type="list" label="COM_GRUPAYER_FORM_LABEL_PUBLISHED" required="true">
+            <option value="0">COM_GRUPAYER_FORM_LABEL_PUBLISHED_OPTION1</option>
+            <option value="1">COM_GRUPAYER_FORM_LABEL_PUBLISHED_OPTION2</option>
+        </field>
+        <field name="disabled" type="list" label="COM_GRUPAYER_FORM_LABEL_DISABLED" required="true">
+            <option value="1">COM_GRUPAYER_FORM_LABEL_DISABLED_OPTION1</option>
+            <option value="0">COM_GRUPAYER_FORM_LABEL_DISABLED_OPTION2</option>
+        </field>
+        <field name="required" type="list" label="COM_GRUPAYER_FORM_LABEL_REQUIRED" required="true">
+            <option value="0">COM_GRUPAYER_FORM_LABEL_REQUIRED_OPTION1</option>
+            <option value="1">COM_GRUPAYER_FORM_LABEL_REQUIRED_OPTION2</option>
+        </field>
+        <field name="mask" type="list" label="COM_GRUPAYER_FORM_LABEL_MASK">
+            <option value="">COM_GRUPAYER_FORM_LABEL_MASK_BLANK_OPTION</option>
+            <option value="currency">COM_GRUPAYER_FORM_LABEL_MASK_OPTION1</option>
+            <option value="cnpjCpf">COM_GRUPAYER_FORM_LABEL_MASK_OPTION2</option>
+            <option value="fullDate">COM_GRUPAYER_FORM_LABEL_MASK_OPTION3</option>
+            <option value="monthYearDate">COM_GRUPAYER_FORM_LABEL_MASK_OPTION4</option>
+        </field>
+        <field name="validator" type="list" label="COM_GRUPAYER_FORM_LABEL_VALIDATOR">
+            <option value="">COM_GRUPAYER_FORM_LABEL_VALIDATOR_BLANK_OPTION</option>
+            <option value="currency">COM_GRUPAYER_FORM_LABEL_VALIDATOR_OPTION1</option>
+            <option value="cnpjCpf">COM_GRUPAYER_FORM_LABEL_VALIDATOR_OPTION2</option>
+            <option value="fullDate">COM_GRUPAYER_FORM_LABEL_VALIDATOR_OPTION3</option>
+            <option value="monthYearDate">COM_GRUPAYER_FORM_LABEL_VALIDATOR_OPTION4</option>
+        </field>
+    </fieldset>
+    <fieldset
+        name="accesscontrol"
+        label="COM_GRUPAYER_FIELDSET_RULES"
+	>
+    	<field
+            name="asset_id"
+            type="hidden"
+            filter="unset"
+		/>
+    	<field
+            name="rules"
+            type="rules"
+            label="COM_GRUPAYER_FIELDSET_RULES"
+            filter="rules"
+            validate="rules"
+            class="inputbox"
+            component="com_grupayer"
+            section="input"
+		/>
+    </fieldset>
+</form>

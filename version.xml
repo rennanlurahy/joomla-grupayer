@@ -1,0 +1,16 @@
+<updates>
+	<update>
+		<name>GRU Payer</name>
+		<description>A Joomla component to get Brazilian Army sites ready to accept Pag Tesouro payments.</description>
+		<element>com_grupayer</element>
+		<type>component</type>
+		<version>1.0.0</version>
+		<infourl>https://github.com/joomla-extensions/weblinks/releases/tag/1.0.0</infourl>
+		<downloads>
+			<downloadurl type="full" format="zip">https://github.com/rennanlurahy/joomla-grupayer/archive/main.zip</downloadurl>
+		</downloads>
+		<tags>
+			<tag>stable</tag>
+		</tags>
+	</update>
+</updates>

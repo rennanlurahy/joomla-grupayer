@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <fieldset name="service_config">
+        <field name="id" type="hidden" label="id" default="1" />
+        <field name="code" type="number" label="COM_GRUPAYER_FORM_LABEL_CODE" required="true" />
+        <field name="description" type="text" label="COM_GRUPAYER_FORM_LABEL_NAME" required="true" />
+        <field name="published" type="list" label="COM_GRUPAYER_FORM_LABEL_PUBLISHED" required="true">
+            <option value="0">COM_GRUPAYER_FORM_LABEL_PUBLISHED_OPTION1</option>
+            <option value="1">COM_GRUPAYER_FORM_LABEL_PUBLISHED_OPTION2</option>
+        </field>
+    </fieldset>
+    <fieldset name="accesscontrol" label="COM_GRUPAYER_FIELDSET_RULES">
+        <field name="asset_id" type="hidden" filter="unset" />
+        <field name="rules" type="rules" label="COM_GRUPAYER_FIELDSET_RULES" filter="rules" validate="rules" class="inputbox" component="com_grupayer" section="service" />
+    </fieldset>
+</form>
